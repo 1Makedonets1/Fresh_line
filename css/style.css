@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cahee-box {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cahee-box__banner {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 1090px;
+    background-image: url(../images/klubnika.png);
+    margin: auto;
+    margin-bottom: -90px;
+}
+
+.cahee-box__nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: #FAFAFC;
+    right: 0;
+    color: #262626;
+    padding-left: 135px;
+    padding-right: 164px;
+    z-index: 100;
+}
+
+.cahee-box__nav_logo {
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.menu {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    padding-top: 36px;
+    list-style-type: none;
+}
+
+.menu__item {
+    border-top: 3px solid;
+    border-color: transparent;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.menu__item:hover {
+    border-top: 3px solid #FF6033;
+}
+
+.cahee-box__banner_text {
+    width: 500px;
+    height: 240px;
+    font-size: 16px;
+    color: #262626;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    padding-left: 135px;
+}
+
+h1 { 
+    color:#262626;
+    font-size:60px;
+    font-weight: 900;
+}
+
+.cahee-box__banner_batton {
+    background: #FF6033;
+    color: #ffffff;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    box-shadow: 0 0 5px #000000;
+    padding-top: 18px; 
+    transition: all .1s ease-in;
+}
+
+.cahee-box__banner_batton:hover {
+    background: #fd4f1f;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+.cahee-box__banner_batton:active {
+    background: #FF6033;
+    font-size: 16px;
+    padding-top: 18px;
+}
+
+.cahee-box__banner_scrol {
+    background-image: url(../images/scroll@1X.png);
+    background-size: cover;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    top: 800px;
+    left: 744px;
+}
+
+.cahee-box__banner_scrol:hover {
+    cursor: pointer;
+    width: 25px;
+    height: 42px;
+}
+
+.cahee-box__banner_scrol:active {
+    width: 24px;
+    height: 40px;
+}
+
+.cahee-box__about-us {
+    display: flex;
+    width: 1500px;
+    height: 700px;
+    margin: auto;
+    background: #00BABA;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cahee-box__about-us_img {
+    width: 556px;
+    height: 559px;
+    background-image: url(../images/malina.png);
+}
+
+.cahee-box__about-us_text {
+    width: 500px;
+    height: 290px;
+    color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.cahee-box__about-us_text h2 {
+    font-size: 90px;
+    padding-bottom: 20px;
+}
+
+.cahee-box__about-us_text p {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
