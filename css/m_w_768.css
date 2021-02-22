@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    
+    .cahee-box__banner {
+        height: 800px;
+        background-image: url(../images/klubnika.png);
+        background-position: center;
+        background-size: cover;
+        margin-bottom: -90px;
+    }
+
+    .cahee-box__nav {
+        height: 130px;
+    }
+
+    .cahee-box__banner_text {
+        margin-top: 250px;
+        width: 563px;
+    }
+
+    .cahee-box__about-us_text {
+        width: 563px;
+    }
+        
+    .nav__menu {
+        margin-top: 20px;
+    }
+
+    .blog {
+        padding-top: 50px;
+    }
+
+    .blog-content {
+        width: 760px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .blog-title + p {
+        width: 563px;
+    }
+
+    .blog-content__card {
+        width: 250px;
+        margin-bottom: 0; 
+    }
+
+    .blog-content__card_info {
+        left: 5px;
+    }
+
+    .date {
+        left: 10px;
+        top: 10px;
+    }
+
+    .batton {
+        width: 250px;
+    }
+}

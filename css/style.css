@@ -1,85 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .1s ease-in;
 }
 
-.cahee-box {
+.container {
+    width: 100%;
     font-family: 'Raleway', sans-serif;
+}
+.cahee-box {
+    min-width: 320px;
 }
 
 .cahee-box__banner {
-    display: flex;
-    align-items: center;
-    width: 1500px;
-    height: 1090px;
     background-image: url(../images/klubnika.png);
-    margin: auto;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    height: 500px;
     margin-bottom: -90px;
 }
 
 .cahee-box__nav {
     width: 100%;
-    height: 70px;
+    height: 125px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     position: fixed;
-    background: #FAFAFC;
-    right: 0;
     color: #262626;
-    padding-left: 135px;
-    padding-right: 164px;
     z-index: 100;
+    background: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255, 1.0) 70%,
+        rgba(255, 255, 255, 0.3) 85%,
+        rgba(255, 255, 255, 0.01) 100%
+        );
 }
 
-.cahee-box__nav_logo {
-    display: flex;
+.nav__logo {
+    min-width: 320px;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
+    text-align: center;
 }
 
-.menu {
-    width: 560px;
+.nav__menu {
+    min-width: 320px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 700;
-    font-size: 16px;
-    align-items: center;
-    padding-top: 36px;
+    font-size: 12px;
     list-style-type: none;
+    text-align: center;
 }
 
-.menu__item {
-    border-top: 3px solid;
-    border-color: transparent;
+.nav__menu__item {
+    padding-top: 3px;
+    border-bottom: 2px solid #d6d6d6;
 }
 
-.menu__item a {
+.nav__menu__item a {
+    padding: 3px;
     text-decoration: none;
     color: #262626;
 }
 
-.menu__item:hover {
-    border-top: 3px solid #FF6033;
+.nav__menu__item a:hover {
+    border-bottom: 3px solid #FF6033;
 }
 
 .cahee-box__banner_text {
-    width: 500px;
-    height: 240px;
+    width: 280px;
+    height: 280px;
     font-size: 16px;
+    text-align: center;
     color: #262626;  
     display: flex; 
     flex-direction: column;
-    justify-content: space-between; 
-    padding-left: 135px;
+    justify-content: space-around; 
+    margin: auto;
+    margin-top: 150px;
+    z-index: 1;
 }
 
 h1 { 
     color:#262626;
-    font-size:60px;
+    font-size:40px;
     font-weight: 900;
+    margin-bottom: 18px;
 }
 
 .cahee-box__banner_batton {
@@ -90,7 +104,7 @@ h1 {
     text-align: center;
     box-shadow: 0 0 5px #000000;
     padding-top: 18px; 
-    transition: all .1s ease-in;
+    margin: auto;
 }
 
 .cahee-box__banner_batton:hover {
@@ -107,57 +121,232 @@ h1 {
     padding-top: 18px;
 }
 
-.cahee-box__banner_scrol {
-    background-image: url(../images/scroll@1X.png);
-    background-size: cover;
-    width: 24px;
-    height: 40px;
-    position: absolute;
-    top: 800px;
-    left: 744px;
-}
-
-.cahee-box__banner_scrol:hover {
-    cursor: pointer;
-    width: 25px;
-    height: 42px;
-}
-
-.cahee-box__banner_scrol:active {
-    width: 24px;
-    height: 40px;
-}
-
 .cahee-box__about-us {
+    margin-top: 50px;
     display: flex;
-    width: 1500px;
-    height: 700px;
+    flex-direction: column;
+    width: 100%;
+    height: 750px;
     margin: auto;
     background: #00BABA;
-    justify-content: space-around;
     align-items: center;
+    z-index: 5;
 }
 
 .cahee-box__about-us_img {
-    width: 556px;
-    height: 559px;
+    width: 300px;
+    height: 300px;
     background-image: url(../images/malina.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 70px;
 }
 
 .cahee-box__about-us_text {
-    width: 500px;
-    height: 290px;
+    width: 280px;
+    height: 300px;
     color: #ffffff;
-    padding-left: 40px;
-    padding-right: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .cahee-box__about-us_text h2 {
-    font-size: 90px;
-    padding-bottom: 20px;
+    font-size: 50px;
 }
 
 .cahee-box__about-us_text p {
-    padding-bottom: 20px;
-    font-size: 16px;
+    font-size: 17px;
 }
+
+.blog {
+    background: #B07CF7;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff; 
+}
+
+.blog-title {
+    margin: auto;
+    opacity: 1;
+    font-size :90px;
+    padding-bottom: 30px;
+
+}
+
+.blog-title + p {
+    display: block;
+    width: 280px;
+    margin: auto;
+    opacity: 0.9;
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 46px;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.blog-content__card {
+    width: 280px;
+    height: 311px;
+    position: relative;
+    background-size: cover;
+    padding-bottom: 23px; 
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#frst {
+    background: linear-gradient(
+        to bottom,
+        rgba(249, 249, 249, 0) 0%,
+        rgba(132, 129, 132, 0.01724439775910369) 58%,
+        rgba(8, 7, 8, 0.7203256302521008) 100%
+      ),
+      url(../images/glass.png) no-repeat center;
+}
+
+#scnd {
+    background: linear-gradient(
+        to bottom,
+        rgba(249, 249, 249, 0) 0%,
+        rgba(132, 129, 132, 0.01724439775910369) 58%,
+        rgba(8, 7, 8, 0.7203256302521008) 100%
+      ),
+      url(../images/soup.png) no-repeat center;
+}
+
+#thrst {
+    background: linear-gradient(
+        to bottom,
+        rgba(249, 249, 249, 0) 0%,
+        rgba(132, 129, 132, 0.01724439775910369) 58%,
+        rgba(8, 7, 8, 0.7203256302521008) 100%
+      ),
+      url(../images/berries.png) no-repeat center;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 61px;
+    height: 61px;
+    background: #000;
+    opacity: 0.6;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center; 
+    border-radius: 6px;
+}
+
+.number {
+    font-size: 32px;
+}
+
+.blog-content__card_info {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 20px;
+    top: 190px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.blog-content__card_info :nth-child(2) {
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0.7;
+    padding-top: 16px;
+}
+
+.batton-wrap {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.batton {
+    margin: auto;
+    width: 280px;
+    height: 56px;
+    background: #F72B3B;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 18px;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 4px;
+}
+
+.contact {
+    width: 100%;
+    height: 960px;
+    background-image: url(../images/footer_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact h2 {
+    font-size: 90px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.contact__text {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.cintact__form {
+    height: 502px;
+    
+}
+
+.contact__footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgb(0, 0, 0) 70%,
+        rgba(60, 75, 51, 0.3) 85%,
+        rgba(40, 56, 33, 0.01) 100%
+        );
+
+}
+
+.contact__footer_logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    padding: 20px;
+
+}
+

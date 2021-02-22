@@ -1,0 +1,38 @@
+@media (min-width: 560px) {
+
+    .cahee-box__banner_text {
+        width: 378px;
+    }
+
+    h1 {
+       font-size: 60px;
+    }
+
+    .cahee-box__about-us_text {
+        width: 378px;
+    }
+
+    .cahee-box__about-us_text h2 {
+        font-size: 70px;
+    }
+
+    .blog {
+        padding-top: 50px;
+    }
+    
+    .blog-title + p {
+        width: 378px;
+    }
+
+    .blog-content__card {
+        width: 378px; 
+    }
+  
+    .blog-content__card_info {
+        width: 300px;
+    }
+
+    .batton {
+        width: 378px;
+    }
+}

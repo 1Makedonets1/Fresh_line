@@ -1,0 +1,139 @@
+@media (min-width: 992px) {
+
+    .cahee-box__banner {
+        height: 1090px;
+    }
+
+    .cahee-box__nav {
+        padding-bottom: 20px;
+        flex-direction: row;
+        height: 125px;
+        justify-content: space-between;
+    }
+
+    .nav__logo {
+        margin-left: 135px;
+    }
+
+    .nav__menu {
+        width: 725px;
+        font-size: 16px;
+        padding-right: 165px;
+        align-items: center;
+    }
+    .nav__menu__item {
+        border-top: 3px solid;
+        border-color: transparent;
+    }
+
+    .container {
+        min-width: 1500px;
+    }
+
+    .nav__menu__item a:hover {
+        border-top: 3px solid #FF6033;
+        border-bottom: none;
+    }
+
+    .cahee-box__banner_text {
+        justify-content: space-between;
+        margin-top: 360px;
+        margin-left: 135px;
+        width: 360px;
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .cahee-box__banner_batton {
+        margin: 0;
+    }
+
+    .cahee-box__about-us {
+        height: 700px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+
+    .cahee-box__about-us_img {
+        width: 566px;
+        height: 559px;
+        margin: 0;
+    }
+
+    .cahee-box__about-us_text {
+        width: 500px;
+        text-align: left; 
+    }
+
+    .cahee-box__about-us_text h2 {
+        font-size: 90px;
+    }
+
+    .blog {
+        padding-top: 100px;
+    }
+    
+    .blog-content {
+        width: 1170px;
+        margin: auto;
+    }
+
+    .blog-content__card {
+        width: 371px;
+    }
+
+    .blog-content__card:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 10px #2f0064;
+        border-radius: 4px;
+    }
+
+    .blog-content__card_info {
+        left: 20px;
+        width: 307px;
+    }
+
+    .blog-content__card_info:hover {
+        box-shadow: none;
+    }
+
+    .date {
+        left: 30px;
+        top: 30px;
+    }
+
+    .blog-content__card_info :nth-child(2) {
+        padding-top: 40px;
+    }
+
+    .batton-wrap {
+        padding-top: 50px;
+        padding-bottom: 120px;
+    }
+
+    .batton {
+        width: 200px;
+    }
+
+    .batton:hover {
+        cursor: pointer;
+        color: #d8d8d8;
+        width: 205px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px #2f0064;
+    }
+
+    .batton:active {
+        box-shadow: 0 0 10px #ffffff;
+        width: 190px;
+        color: #ffffff;
+        background: #ff0015;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+}
