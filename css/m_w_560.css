@@ -1,5 +1,20 @@
 @media (min-width: 560px) {
 
+    .nav__menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 12px;
+        list-style-type: none;
+        margin: auto;
+    }
+    
+    .nav__menu__item {
+        padding-top: 3px;
+        text-align: center;
+    }
+
     .cahee-box__banner_text {
         width: 378px;
     }
@@ -34,5 +49,25 @@
 
     .batton {
         width: 378px;
+    }
+
+    .contact h2 {
+        font-size: 90px;
+    }
+
+    .contact__text {
+        width: 378px;
+    }
+
+    .contact__form {
+        width: 378px; 
+    }
+
+    .input__item {
+        width: 378px;
+    }
+
+    .contact__form_contacts h4{
+        padding-top: 10px;
     }
 }

@@ -1,5 +1,4 @@
 @media (min-width: 992px) {
-
     .cahee-box__banner {
         height: 1090px;
     }
@@ -13,6 +12,7 @@
 
     .nav__logo {
         margin-left: 135px;
+        font-size: 50px;
     }
 
     .nav__menu {
@@ -20,6 +20,7 @@
         font-size: 16px;
         padding-right: 165px;
         align-items: center;
+        margin: 0;
     }
     .nav__menu__item {
         border-top: 3px solid;
@@ -135,5 +136,48 @@
         background: #ff0015;
         border-radius: 6px;
         font-size: 18px;
+    }
+
+
+    .contact {
+        height: 960px;
+    }
+
+    .contact__form {
+        width: 280px;
+        height: 400px; 
+        flex-direction: row;
+
+    }
+
+    .contact__text {
+        width: 350px;
+    }
+
+    .contact__form {
+        width: 930px; 
+        justify-content: space-between;
+    }
+
+    .contact__form_input {
+        width: 500px;
+    }
+
+    .input__item {
+        height: 50px;
+    }
+
+    .massage {
+        height: 250px;
+    }
+
+    .contact__form_contacts {
+        width: 350px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .contact__footer {
+        height: 90px;
     }
 }

@@ -22,7 +22,7 @@
     }
         
     .nav__menu {
-        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
     .blog {
@@ -56,4 +56,31 @@
     .batton {
         width: 250px;
     }
+
+    .contact__form {
+        width: 280px;
+        height: 400px; 
+        flex-direction: row;
+
+    }
+
+    .contact__text {
+        width: 563px;
+    }
+
+    .contact__form {
+        width: 750px; 
+        justify-content: space-around;
+    }
+
+    .contact__form_input {
+        width: 400px;
+    }
+
+    .contact__form_contacts {
+        width: 300px;
+        text-align: left;
+        margin: 0;
+    }
+
 }
