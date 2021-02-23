@@ -331,10 +331,6 @@ h1 {
     color:#262626
 }
 
-.input__item::placeholder {
-    color: #ffffff;
-    opacity: 0.7;
-}
 
 .input__item {
     width: 280px;
@@ -346,12 +342,21 @@ h1 {
     outline:none;
     border-left: 4px solid;
     border-left-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
 }
+
+.input__item::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
 
 .input__item:active,
 .input__item:hover {
     background: #00C4C4;
-    border-left: 4px solid #355B82
+    border-left: 4px solid #355B82;
+    font-weight: bold;
 }
 
 .massage {
